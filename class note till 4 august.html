@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Mathematics Study Guide</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h2 {
+            color: #34495e;
+            border-left: 4px solid #e74c3c;
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #27ae60;
+            margin-top: 25px;
+        }
+        .definition {
+            background: #e8f4fd;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .theorem {
+            background: #f0f8ff;
+            border: 2px solid #4169e1;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .example {
+            background: #f9f9f9;
+            border-left: 4px solid #27ae60;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .formula {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            overflow-x: auto;
+        }
+        .important {
+            background: #ffe6e6;
+            border-left: 4px solid #e74c3c;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .matrix-container {
+            text-align: center;
+        }
+        .matrix {
+            font-family: 'Courier New', monospace;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .note {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 10px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        .homework {
+            background: #fff9e6;
+            border: 2px dashed #ff9800;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .toc {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .toc li {
+            margin: 5px 0;
+        }
+        .toc a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Comprehensive Mathematics Study Guide</h1>
+        <p><strong>Date Range:</strong> July 23, 2025 - August 1, 2025</p>
+        <p><strong>Subjects:</strong> Linear Algebra, Analytic Geometry, Calculus, Complex Numbers, Statistics, Physics</p>
+
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#linear-algebra">1. Linear Algebra</a></li>
+                <li><a href="#analytic-geometry">2. Analytic and Vector Geometry</a></li>
+                <li><a href="#vectors">3. Vectors in Rⁿ and Cⁿ</a></li>
+                <li><a href="#calculus">4. Differential and Integral Calculus</a></li>
+                <li><a href="#functions">5. Functions</a></li>
+                <li><a href="#number-systems">6. Number Systems</a></li>
+                <li><a href="#statistics">7. Statistics</a></li>
+                <li><a href="#thermodynamics">8. Thermodynamics (Physics)</a></li>
+            </ul>
+        </div>
+
+        <h1 id="linear-algebra">1. Linear Algebra</h1>
+        
+        <h2>1.1 Matrices</h2>
+        
+        <div class="definition">
+            <h3>Definition: Matrix</h3>
+            <p>A matrix is a rectangular array of numbers arranged in rows and columns. If a matrix has 'm' rows and 'n' columns, it is called an m×n matrix.</p>
+        </div>
+
+        <h3>Types of Matrices (All Types Required for Homework)</h3>
+        
+        <table>
+            <tr>
+                <th>Matrix Type</th>
+                <th>Definition (English)</th>
+                <th>Definition (Bengali)</th>
+            </tr>
+            <tr>
+                <td><strong>Row Matrix</strong></td>
+                <td>A matrix with only one row (1×n)</td>
+                <td>সারি ম্যাট্রিক্স</td>
+            </tr>
+            <tr>
+                <td><strong>Column Matrix</strong></td>
+                <td>A matrix with only one column (m×1)</td>
+                <td>কলাম ম্যাট্রিক্স</td>
+            </tr>
+            <tr>
+                <td><strong>Zero Matrix</strong></td>
+                <td>All elements are zero</td>
+                <td>শূন্য ম্যাট্রিক্স</td>
+            </tr>
+            <tr>
+                <td><strong>Identity Matrix (Unit Matrix)</strong></td>
+                <td>Square matrix with 1s on the main diagonal and 0s elsewhere</td>
+                <td>একক ম্যাট্রিক্স</td>
+            </tr>
+            <tr>
+                <td><strong>Square Matrix</strong></td>
+                <td>Number of rows equals the number of columns (n×n)</td>
+                <td>বর্গ ম্যাট্রিক্স</td>
+            </tr>
+            <tr>
+                <td><strong>Diagonal Matrix</strong></td>
+                <td>Square matrix with non-zero elements only on the main diagonal</td>
+                <td>কর্ণ ম্যাট্রিক্স</td>
+            </tr>
+            <tr>
+                <td><strong>Scalar Matrix</strong></td>
+                <td>Diagonal matrix with all diagonal elements equal</td>
+                <td>স্কেলার ম্যাট্রিক্স</td>
+            </tr>
+            <tr>
+                <td><strong>Upper Triangular Matrix</strong></td>
+                <td>All elements below the main diagonal are zero</td>
+                <td>ঊর্ধ্ব ত্রিভুজ ম্যাট্রিক্স</td>
+            </tr>
+             <tr>
+                <td><strong>Idempotent Matrix</strong></td>
+                <td>A matrix where A² = A</td>
+                <td>সমঘাতি ম্যাট্রিক্স</td>
+            </tr>
+            <tr>
+                <td><strong>Orthogonal Matrix</strong></td>
+                <td>A matrix where A·Aᵀ = Aᵀ·A = I</td>
+                <td>লম্ব ম্যাট্রিক্স</td>
+            </tr>
+            <tr>
+                <td><strong>Conjugate Matrix</strong></td>
+                <td>A matrix where each element is replaced by its complex conjugate</td>
+                <td>অনুবন্ধি ম্যাট্রিক্স</td>
+            </tr>
+             <tr>
+                <td><strong>Hermitian Matrix</strong></td>
+                <td>A square matrix that is equal to its own conjugate transpose (A = A*)</td>
+                <td>হার্মিশিয়ান ম্যাট্রিক্স</td>
+            </tr>
+        </table>
+
+        <div class="definition">
+            <h3>Trace of a Matrix</h3>
+            <p>For a square matrix A, the trace is the sum of the elements on the main diagonal:</p>
+            <div class="formula">tr(A) = a₁₁ + a₂₂ + ... + aₙₙ</div>
+        </div>
+
+        <h3>Matrix Multiplication</h3>
+        
+        <div class="example">
+            <h4>Example: Matrix Multiplication</h4>
+            <p>Given matrices A (2×3) and B (3×2):</p>
+            <div class="matrix-container">
+                <div class="matrix">
+                    A = [2  3  5]<br>
+                        [3 -1  4]
+                </div>
+                <div class="matrix">
+                    B = [1  2]<br>
+                        [2  3]<br>
+                        [3  4]
+                </div>
+            </div>
+            
+            <p><strong>Solution:</strong></p>
+            <p>A × B = [(2×1 + 3×2 + 5×3)  (2×2 + 3×3 + 5×4)]<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(3×1 + (-1)×2 + 4×3)  (3×2 + (-1)×3 + 4×4)]</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= [(2 + 6 + 15)  (4 + 9 + 20)]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(3 - 2 + 12)  (6 - 3 + 16)]</p>
+            <div class="formula">
+                A × B = [23  33]<br>
+                        [13  19]
+            </div>
+        </div>
+
+        <div class="important">
+            <h4>Matrix Multiplication Rules:</h4>
+            <ul>
+                <li>For A(m×n) × B(p×q): multiplication is possible only if <strong>n = p</strong>.</li>
+                <li>The resulting matrix will have dimensions (m×q).</li>
+                <li>Generally, <strong>AB ≠ BA</strong> (it is not commutative).</li>
+            </ul>
+        </div>
+
+        <h1 id="analytic-geometry">2. Analytic and Vector Geometry</h1>
+        
+        <h2>2.1 Coordinate Systems</h2>
+        
+        <div class="definition">
+            <h3>Coordinate Systems</h3>
+            <p><strong>Cartesian Coordinates (কার্তেসীয় স্থানাঙ্ক):</strong> A point is represented by an ordered pair (x, y).</p>
+            <p><strong>Polar Coordinates (পোলার স্থানাঙ্ক):</strong> A point is represented by a distance from the origin (r) and an angle (θ).</p>
+        </div>
+
+        <h3>Coordinate Transformations</h3>
+        
+        <div class="formula">
+            <h4>Cartesian ↔ Polar Conversion:</h4>
+            <p>x = r cos θ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y = r sin θ</p>
+            <p>r = √(x² + y²)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;θ = tan⁻¹(y/x)</p>
+        </div>
+
+        <h2>2.2 Transformation of Coordinates</h2>
+        
+        <h3>Types of Transformations:</h3>
+        <ol>
+            <li><strong>Translation (মূল বিন্দুর স্থানান্তর):</strong> Changing the origin's position while keeping axis directions unchanged.</li>
+            <li><strong>Rotation (অক্ষের আবর্তন):</strong> Rotating axes around the origin while keeping it fixed.</li>
+            <li><strong>Combined:</strong> Both translation and rotation.</li>
+        </ol>
+
+        <div class="theorem">
+            <h3>Theorem 1: Translation of Axes</h3>
+            <p><strong>Statement:</strong> If the origin is translated to a new point O'(α, β) while keeping the axis directions unchanged, then:</p>
+            <p><strong>(a)</strong> The new coordinates (x₁, y₁) of a point P(x,y) are: <strong>(x₁, y₁) = (x-α, y-β)</strong></p>
+            <p><strong>(b)</strong> The transformed equation of f(x,y) = 0 is: <strong>f(x₁+α, y₁+β) = 0</strong></p>
+        </div>
+
+        <div class="theorem">
+            <h3>Theorem 2: Rotation of Axes</h3>
+            <p><strong>Statement:</strong> If the axes are rotated by an angle θ while keeping the origin fixed, then:</p>
+            <p><strong>(a)</strong> The new coordinates (x₁, y₁) are related to the old coordinates (x, y) by:</p>
+            <div class="formula">
+                x₁ = x cos θ + y sin θ<br>
+                y₁ = -x sin θ + y cos θ
+            </div>
+             <p><strong>(b)</strong> The old coordinates (x, y) can be expressed in terms of the new coordinates (x₁, y₁) as:</p>
+            <div class="formula">
+                x = x₁cos θ - y₁sin θ<br>
+                y = x₁sin θ + y₁cos θ
+            </div>
+        </div>
+
+        <h1 id="vectors">3. Vectors in Rⁿ and Cⁿ</h1>
+        
+        <h2>3.1 Vector Notation</h2>
+        
+        <div class="definition">
+            <h3>Vector in Rⁿ (Real Space)</h3>
+            <p>A vector u in n-dimensional real space is an ordered n-tuple:</p>
+            <div class="formula">u = (u₁, u₂, ..., uₙ) ∈ Rⁿ</div>
+        </div>
+
+        <div class="definition">
+            <h3>Vector in Cⁿ (Complex Space)</h3>
+            <p>A vector u in n-dimensional complex space where each component uᵢ is a complex number:</p>
+            <div class="formula">u = (u₁, u₂, ..., uₙ) ∈ Cⁿ</div>
+        </div>
+
+        <h2>3.2 Dot Product (Inner Product)</h2>
+        
+        <div class="definition">
+            <h3>Dot Product in Rⁿ</h3>
+            <p>For vectors u = (u₁, ..., uₙ) and v = (v₁, ..., vₙ) in Rⁿ:</p>
+            <div class="formula">u · v = u₁v₁ + u₂v₂ + ... + uₙvₙ</div>
+        </div>
+
+        <div class="definition">
+            <h3>Dot Product in Cⁿ</h3>
+            <p>For vectors u, v ∈ Cⁿ:</p>
+            <div class="formula">u · v = u₁v̅₁ + u₂v̅₂ + ... + uₙv̅ₙ</div>
+            <p>Note: v̅ᵢ represents the complex conjugate of vᵢ.</p>
+        </div>
+        
+        <div class="important">
+            <h4>Commutative Property of Dot Product:</h4>
+            <p>In <strong>Real</strong> vector spaces (Rⁿ): <strong>u · v = v · u</strong> (Commutative)</p>
+            <p>In <strong>Complex</strong> vector spaces (Cⁿ): <strong>u · v ≠ v · u</strong>. Instead, <strong>u · v = (v · u)̅</strong> (Conjugate symmetric).</p>
+        </div>
+
+        <h2>3.3 Norm (Length) and Distance</h2>
+        
+        <table>
+            <tr>
+                <th>Concept</th>
+                <th>In Rⁿ (Real Space)</th>
+                <th>In Cⁿ (Complex Space)</th>
+            </tr>
+            <tr>
+                <td><strong>Norm (Length) ||u||</strong></td>
+                <td><div class="formula">||u|| = √(u₁² + u₂² + ... + uₙ²)</div></td>
+                <td><div class="formula">||u|| = √(|u₁|² + |u₂|² + ... + |uₙ|²)</div></td>
+            </tr>
+            <tr>
+                <td><strong>Distance d(u,v)</strong></td>
+                <td><div class="formula">d(u,v) = ||u-v|| = √((u₁-v₁)² + ... + (uₙ-vₙ)²)</div></td>
+                <td><div class="formula">d(u,v) = ||u-v|| = √(|u₁-v₁|² + ... + |uₙ-vₙ|²)</div></td>
+            </tr>
+        </table>
+        
+        <div class="example">
+            <h4>Example: Distance Calculation in C³</h4>
+            <p>Let u = (i, 1-i, -3+i) and v = (2, 3+i, -i)</p>
+            <p><strong>Step 1: Find u - v</strong></p>
+            <p>u-v = (i-2, (1-i)-(3+i), (-3+i)-(-i)) = (-2+i, -2-2i, -3+2i)</p>
+            <p><strong>Step 2: Calculate the squared magnitude of each component</strong></p>
+            <p>|-2+i|² = (-2)² + 1² = 5</p>
+            <p>|-2-2i|² = (-2)² + (-2)² = 8</p>
+            <p>|-3+2i|² = (-3)² + 2² = 13</p>
+            <p><strong>Step 3: Sum the squares and take the square root</strong></p>
+            <div class="formula">d(u,v) = ||u-v|| = √(5 + 8 + 13) = √26</div>
+        </div>
+
+        <h1 id="calculus">4. Differential and Integral Calculus</h1>
+        
+        <h2>4.1 Basic Integration</h2>
+        
+        <div class="formula">
+            <h3>Fundamental Integration Rules</h3>
+            <p>∫ xⁿ dx = (xⁿ⁺¹)/(n+1) + C,  (for n ≠ -1)</p>
+            <p>∫ (1/x) dx = ln|x| + C</p>
+        </div>
+
+        <h3>Integration Methods</h3>
+        <ol>
+            <li><strong>Substitution Method (প্রতিস্থাপন পদ্ধতি)</strong></li>
+            <li><strong>Using Standard Formulas (সূত্র ব্যবহার করে)</strong></li>
+        </ol>
+
+        <h1 id="functions">5. Functions</h1>
+
+        <div class="definition">
+            <h3>Definition: Function</h3>
+            <p>A relationship between two non-empty sets A and B is called a function from A to B if for every element in set A, there exists one and only one image in set B.</p>
+            <div class="formula">f: A → B</div>
+            <p><strong>Domain (ডোমেন):</strong> The set of all possible inputs (Set A). Df = A.</p>
+            <p><strong>Codomain (কোডোমেন):</strong> The set of all possible outputs (Set B). Codf = B.</p>
+            <p><strong>Range (রেঞ্জ):</strong> The set of all actual outputs. The range is a subset of the codomain.</p>
+        </div>
+
+        <h3>Types of Functions</h3>
+         <table>
+            <tr>
+                <th>Function Type</th>
+                <th>Definition</th>
+            </tr>
+            <tr>
+                <td><strong>One-to-One (Injective) Function</strong> (এক-এক ফাংশন)</td>
+                <td>Every element in the domain has a unique image in the codomain. No two inputs have the same output.</td>
+            </tr>
+            <tr>
+                <td><strong>Onto (Surjective) Function</strong> (সার্বিক ফাংশন)</td>
+                <td>Every element in the codomain is an image of at least one element from the domain. (Range = Codomain).</td>
+            </tr>
+            <tr>
+                <td><strong>Constant Function</strong> (ধ্রুবক ফাংশন)</td>
+                <td>Every element in the domain maps to the exact same element in the codomain.</td>
+            </tr>
+        </table>
+
+
+        <h1 id="number-systems">6. Number Systems</h1>
+
+        <div class="definition">
+            <h3>Number Set Hierarchy</h3>
+            <p>The sets of numbers are nested within each other as follows:</p>
+            <div class="formula">N ⊂ Z ⊂ Q ⊂ R ⊂ C</div>
+        </div>
+        
+        <table>
+            <tr>
+                <th>Symbol</th>
+                <th>Name (English)</th>
+                <th>Name (Bengali)</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><strong>N</strong></td>
+                <td>Natural Numbers</td>
+                <td>স্বাভাবিক সংখ্যা</td>
+                <td>{1, 2, 3, ...}</td>
+            </tr>
+            <tr>
+                <td><strong>Z</strong></td>
+                <td>Integers</td>
+                <td>পূর্ণসংখ্যা</td>
+                <td>{..., -2, -1, 0, 1, 2, ...}</td>
+            </tr>
+             <tr>
+                <td><strong>Q</strong></td>
+                <td>Rational Numbers</td>
+                <td>মূলদ সংখ্যা</td>
+                <td>Numbers that can be expressed as p/q, where p, q ∈ Z and q ≠ 0.</td>
+            </tr>
+             <tr>
+                <td><strong>R</strong></td>
+                <td>Real Numbers</td>
+                <td>বাস্তব সংখ্যা</td>
+                <td>All rational and irrational numbers.</td>
+            </tr>
+            <tr>
+                <td><strong>C</strong></td>
+                <td>Complex Numbers</td>
+                <td>জটিল সংখ্যা</td>
+                <td>Numbers of the form a + bi, where a, b ∈ R and i = √-1.</td>
+            </tr>
+        </table>
+        
+        <h1 id="statistics">7. Statistics</h1>
+        
+        <h2>Functions of Statistics (পরিসংখ্যানের কার্যাবলী)</h2>
+        <ol>
+            <li><strong>Data Collection (তথ্য সংগ্রহ)</strong></li>
+            <li><strong>Data Organization (তথ্য সাজানো)</strong></li>
+            <li><strong>Data Presentation (তথ্য উপস্থাপন)</strong></li>
+            <li><strong>Data Analysis (তথ্য বিশ্লেষণ)</strong></li>
+            <li><strong>Interpretation (ব্যাখ্যাদান)</strong></li>
+            <li><strong>Generalization (সাধারণীকরণ)</strong></li>
+            <li><strong>Forecasting (ভবিষ্যৎবাণী)</strong></li>
+        </ol>
+        
+        <h1 id="thermodynamics">8. Thermodynamics (Physics)</h1>
+        
+        <h2>Key Topics from Notes</h2>
+        <ul>
+            <li><strong>Chapter 5:</strong> The Second Law of Thermodynamics</li>
+            <li><strong>Chapter 6:</strong> Entropy</li>
+            <li><strong>Chapter 7:</strong> Thermodynamics Function</li>
+            <li><strong>Chapter 8:</strong> Radiation</li>
+        </ul>
+
+        <div class="homework">
+            <h2>Homework Assignments</h2>
+            <p><strong>Linear Algebra:</strong> Solve problems for all types of matrices listed. Practice matrix multiplication and determinant solutions.</p>
+            <p><strong>Number Systems:</strong> Write down the definitions of all number sets and their properties.</p>
+            <p><strong>General:</strong> All homework problems provided in the book are to be completed.</p>
+        </div>
+
+    </div>
+</body>
+</html>
